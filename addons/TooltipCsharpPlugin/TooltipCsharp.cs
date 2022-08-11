@@ -1,6 +1,6 @@
 using Godot;
 using System;
-namespace Addons.Nodes
+namespace psychobarge.godot
 {
 	[Tool]
 	public class TooltipCsharp : Node

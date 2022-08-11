@@ -1,6 +1,6 @@
 using System;
 
-namespace Addons.Nodes
+namespace psychobarge.godot
 {
 	interface ITooltip
 	{

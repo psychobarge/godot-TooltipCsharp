@@ -37,6 +37,24 @@ If you realy want to put a Tooltip on anything else, you'll have to implement th
 
 - **Owner Path** is the parent of your TooltipCsharp Node
 
+To create a Tooltip dynamicaly you can use this static function :
+
+```C#
+ Addons.Nodes.Utils.CreateTooltipCsharp(PackedScene visualScene, Node parent);
+```
+
+Here an example :
+
+```C#
+//Create a new tooltip with a packed scene and a parent
+TooltipCsharp tooltip = godot-TooltipCsharp.Utils.CreateTooltipCsharp(
+    (PackedScene)ResourceLoader.Load("res://example/TooltipScene.tscn"),
+     GetNode<Label>($"%Label2").GetParent());
+
+//Add it to the parent (must be the same a below)
+GetNode<Label>($"%Label2").AddChild(tooltip);
+```
+
 # Example
 
 You'll find an example folder in the project with a Main scene with a tooltip and some example to modify it programatically.

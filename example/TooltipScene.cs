@@ -1,6 +1,6 @@
 using Godot;
 using System;
-using Addons.Nodes;
+using psychobarge.godot;
 
 // the scene used as tooltip MUST be of type "Control" 
 // and implement the ITooltip interface.
