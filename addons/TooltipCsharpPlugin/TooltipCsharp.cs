@@ -18,10 +18,10 @@ namespace psychobarge.godot
 		public bool follow_mouse = true;
 
 		[Export(PropertyHint.Range, "0, 100, 1")]
-		public float offset_x = 0;
+		public float offset_x = 5;
 
 		[Export(PropertyHint.Range, "0, 100, 1")]
-		public float offset_y = 0;
+		public float offset_y = 5;
 
 		[Export(PropertyHint.Range, "0, 100, 1")]
 		public float padding_x = 0;

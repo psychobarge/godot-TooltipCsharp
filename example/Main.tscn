@@ -27,6 +27,8 @@ script = ExtResource( 3 )
 visuals_res = ExtResource( 1 )
 owner_path = NodePath("..")
 delay = 0.5
+offset_x = 5.0
+offset_y = 5.0
 
 [node name="Button" type="Button" parent="Panel"]
 unique_name_in_owner = true
