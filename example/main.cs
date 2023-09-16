@@ -2,7 +2,7 @@ using Godot;
 using System;
 using psychobarge.godot;
 
-public class main : Node2D
+public partial class main : Node2D
 {
 	TooltipCsharp tooltip;
 	Button button;
@@ -14,7 +14,7 @@ public class main : Node2D
 		button = (Button)GetNode($"%Button");
 		textEdit = (TextEdit)GetNode($"%TextEdit");
 
-		button.Connect("pressed", this, "_on_Button_pressed");
+		button.Connect("pressed", new Callable(this, "_on_Button_pressed"));
 
 		GetNode<Label>($"%Label2").AddChild(Utils.CreateTooltipCsharp((PackedScene)ResourceLoader.Load("res://example/TooltipScene.tscn"), GetNode<Label>($"%Label2").GetParent()));
 	}
