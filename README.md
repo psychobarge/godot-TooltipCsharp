@@ -1,10 +1,10 @@
-# TooltipCSharp for Godot 3.x
+# TooltipCSharp for Godot 4.x
 
 A C# port of the Modular-tooltip by IndieQuest. I made some changes for my needs and also made it an addon for Godot Mono.
 
 Original GD code by IndieQuest : https://github.com/IndieQuest/Modular-tooltip
 
-__The examples are made with Godot 3.5 and wont work on 3.4__
+__The examples are made with Godot 4.2__
 
 # Installation
 - Copy `addons/TooltipCsharp` into your project (final path should be `res://addons/TooltipCsharp`).
