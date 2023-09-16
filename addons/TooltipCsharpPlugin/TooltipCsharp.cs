@@ -118,6 +118,7 @@ namespace psychobarge.godot
         {
             _timer.Stop();
             _visuals.Show();
+            _Process(0);
         }
 
         private Vector2 GetScreenPos()
